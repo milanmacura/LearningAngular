@@ -1,0 +1,35 @@
+<div align="center"><h3>Existing tasks</h3></div>
+
+
+<div class='table-responsive'>
+  <table class='table'
+  *ngIf='tasks && tasks.length'>
+    <thead>
+      <tr>
+
+        <th>Id</th>
+        <th>Type</th>
+        <th>Date</th>
+        <th>Description</th>
+        <th>Task</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let tasks of tasks'>
+
+            <td><a [routerLink]="['/viewTask', tasks.id]">
+              {{tasks.id}}
+              </a>
+            </td>
+            
+            <td>{{tasks.type}}</td>
+            <td>{{tasks.date}}</td>
+            <td>{{tasks.description}}</td>
+            <td>{{tasks.task}}</td>
+            <td>{{tasks.time}}</td>
+        </tr>
+
+    </tbody>
+  </table>
+</div>

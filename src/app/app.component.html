@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<nav class = 'navbar navbar-expand navbar-dark bg-light'>
+    <a class='navbar-brand'>ItLabReminder</a>
+    <ul class = 'nav nav-pills'>
+     <li><a class='nav-link' [routerLink]="['/addTask']">Add new task</a></li>
+     <li><a class='nav-link' [routerLink]="['/viewTask']">View existing tasks</a></li>
+  </ul>
+  </nav>
+<div class = 'container'>
+<router-outlet></router-outlet>
+</div>
